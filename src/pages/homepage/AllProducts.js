@@ -9,6 +9,7 @@ import PointsContext from "../context/pointsContext";
 
 const AllProducts = () => {
 
+    const url = 'https://amazon-clone-9muu.onrender.com';
 
     const navigate = useNavigate();
 
@@ -16,7 +17,8 @@ const AllProducts = () => {
     const [data, setData] = useState([]);
     const [cartView, setCartView] = useState(false)
     const getData = async () => {
-        const res = await fetch('http://localhost:1400/products', {
+        // const res = await fetch(`http://localhost:1400/products`, {
+        const res = await fetch(`${url}/products`, {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json"

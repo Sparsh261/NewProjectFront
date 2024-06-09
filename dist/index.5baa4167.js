@@ -35737,12 +35737,14 @@ var _pointsContextDefault = parcelHelpers.interopDefault(_pointsContext);
 var _s = $RefreshSig$();
 const AllProducts = ()=>{
     _s();
+    const url = "https://amazon-clone-9muu.onrender.com";
     const navigate = (0, _reactRouterDom.useNavigate)();
     const contextValues = (0, _react.useContext)((0, _pointsContextDefault.default));
     const [data, setData] = (0, _react.useState)([]);
     const [cartView, setCartView] = (0, _react.useState)(false);
     const getData = async ()=>{
-        const res = await fetch("http://localhost:1400/products", {
+        // const res = await fetch(`http://localhost:1400/products`, {
+        const res = await fetch(`${url}/products`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -35766,7 +35768,7 @@ const AllProducts = ()=>{
                             children: "All Products"
                         }, void 0, false, {
                             fileName: "src/pages/homepage/AllProducts.js",
-                            lineNumber: 39,
+                            lineNumber: 41,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35781,7 +35783,7 @@ const AllProducts = ()=>{
                                             class: "fa-solid fa-cart-shopping"
                                         }, void 0, false, {
                                             fileName: "src/pages/homepage/AllProducts.js",
-                                            lineNumber: 43,
+                                            lineNumber: 45,
                                             columnNumber: 33
                                         }, undefined),
                                         "My Cart ",
@@ -35790,25 +35792,25 @@ const AllProducts = ()=>{
                                             children: contextValues.userPoints
                                         }, void 0, false, {
                                             fileName: "src/pages/homepage/AllProducts.js",
-                                            lineNumber: 44,
+                                            lineNumber: 46,
                                             columnNumber: 41
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/homepage/AllProducts.js",
-                                    lineNumber: 42,
+                                    lineNumber: 44,
                                     columnNumber: 29
                                 }, undefined) : "",
                                 cartView ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _modalDefault.default), {
                                     onClose: ()=>setCartView(false),
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {}, void 0, false, {
                                         fileName: "src/pages/homepage/AllProducts.js",
-                                        lineNumber: 47,
+                                        lineNumber: 49,
                                         columnNumber: 79
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/pages/homepage/AllProducts.js",
-                                    lineNumber: 47,
+                                    lineNumber: 49,
                                     columnNumber: 37
                                 }, undefined) : "",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35819,19 +35821,19 @@ const AllProducts = ()=>{
                                     children: "Home"
                                 }, void 0, false, {
                                     fileName: "src/pages/homepage/AllProducts.js",
-                                    lineNumber: 48,
+                                    lineNumber: 50,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/homepage/AllProducts.js",
-                            lineNumber: 40,
+                            lineNumber: 42,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/homepage/AllProducts.js",
-                    lineNumber: 38,
+                    lineNumber: 40,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35842,24 +35844,24 @@ const AllProducts = ()=>{
                                 elem: elem
                             }, void 0, false, {
                                 fileName: "src/pages/homepage/AllProducts.js",
-                                lineNumber: 60,
+                                lineNumber: 62,
                                 columnNumber: 33
                             }, undefined)
                         }, elem._id, false, {
                             fileName: "src/pages/homepage/AllProducts.js",
-                            lineNumber: 59,
+                            lineNumber: 61,
                             columnNumber: 29
                         }, undefined);
                     })
                 }, void 0, false, {
                     fileName: "src/pages/homepage/AllProducts.js",
-                    lineNumber: 55,
+                    lineNumber: 57,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/pages/homepage/AllProducts.js",
-            lineNumber: 36,
+            lineNumber: 38,
             columnNumber: 13
         }, undefined)
     }, void 0, false);
